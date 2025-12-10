@@ -1,0 +1,183 @@
+/* Purdue Colors: #CEB888 (Gold), #000000 (Black), #9D968D (Dust) */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    color: #CEB888;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid #CEB888;
+}
+
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Back Button */
+#home-btn {
+    margin-top: 20px;
+    background-color: #CEB888;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#home-btn:hover {
+    background-color: #bfa36a;
+}
+
+/* List View */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border-bottom: 4px solid #CEB888;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #eee;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    color: #000;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Detail View */
+.hidden {
+    display: none !important;
+}
+
+#detail-view {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.detail-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Aligns top */
+}
+
+/* New Image Column Styling */
+.detail-images {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detail-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#creator-container .caption {
+    margin: 0 0 5px;
+    font-weight: bold;
+    color: #CEB888;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.detail-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+#detail-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5rem;
+    color: #000;
+    margin-top: 0;
+}
+
+#detail-subtitle {
+    color: #CEB888;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#detail-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.fact-box {
+    background-color: #f9f9f9;
+    border-left: 5px solid #CEB888;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.fact-box h4 {
+    margin: 0 0 5px;
+    color: #000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #333;
+    color: #fff;
+}

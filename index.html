@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purdue Engineering Prowess</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Boilermaker Innovation</h1>
+            <p>Celebrating Purdue University's Engineering Prowess</p>
+            <button id="home-btn" class="hidden" onclick="showHome()">← Back to List</button>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- List View -->
+        <div id="list-view" class="grid-container">
+            <!-- Items injected by JS -->
+        </div>
+
+        <!-- Detail View -->
+        <div id="detail-view" class="hidden">
+            <div class="detail-content">
+                <!-- Left Column: Images -->
+                <div class="detail-images">
+                    <img id="detail-image-main" src="" alt="Main Innovation">
+                    <div id="creator-container" class="hidden">
+                        <p class="caption">The Creator</p>
+                        <img id="detail-image-creator" src="" alt="Creator">
+                    </div>
+                </div>
+
+                <!-- Right Column: Text -->
+                <div class="detail-text">
+                    <h2 id="detail-title"></h2>
+                    <h3 id="detail-subtitle"></h3>
+                    <p id="detail-description"></p>
+                    <div class="fact-box">
+                        <h4>Did You Know?</h4>
+                        <p id="detail-fact"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Created with Boiler Pride. Hosted on GitHub Pages.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
